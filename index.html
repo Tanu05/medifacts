@@ -1,0 +1,595 @@
+<html>
+    <head>
+		<title>MEDIFACTS</title>
+		<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
+        <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<script src="js/script.js"></script>
+		<style type="text/css">
+            .modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  margin-top: -90px;
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: #1CB4E3;
+  color: white;
+}
+
+.modal-body {padding: 2px 16px;}
+}
+        </style>
+    </head>       
+<body>
+		<header>
+				<a href="index.php" style="text-decoration: none;"><img src="image/logodesign.jpg" style="max-width: 40%; max-height: 40%;margin-top: 2%;">
+				<h1 class="shimmer" style="margin-left:7%;">MEDIFACTS</h1>
+				<h3 style="font-family: Comic Sans MS; font-weight: 250; font-size: 1em;text-align-last: left;margin-top: -10px; margin-left:11%;color:#1CB4E3;">We Know Your Pills</h3></a>
+				<ul class="first_ul">
+					<li><a href="tel: 9834634031"><i class="fa fa-phone"></i></a></li>
+					<li><a href="#shoppingcart" id="myNumber"><i class="fa fa-shopping-cart"></i></a></li>
+					<li><a href="signin.php"><i class="material-icons">person</i></a></li>
+				</ul><br>
+					 <ul class = "sec_ul">
+						<li><a class="active" href="index.php"><b>Home</b></a></li>
+						<li><a href="#about"><b>About</b></a></li> 
+						<div class="dropdown">   
+						<li><a href="#department"><b>Departments</b></a></li>
+							<div class="dropdown-content">
+								<a href="ayurvedic.php"><b>Ayurvedic</b></a>
+								<a href="ayurvedic.php"><b>Homeopathic</b></a>
+								<a href="ayurvedic.php"><b>Naturopathic</b></a>
+								<a href="ayurvedic.php"><b>Allopathic</b></a>
+							</div>
+						</div>
+						<div class="dropdown">
+						<li><a href="#healthcare"><b>Health Care</b></a></li>
+							<div class="dropdown-content">
+								 <a href="ayurvedic.php"><b>Personal Care</b></a>
+								<a href="ayurvedic.php"><b>Baby & Mom Care</b></a>
+								  <a href="ayurvedic.php"><b>Diabetic Care</b></a>
+								<a href="ayurvedic.php"><b>Weight Management</b></a>
+								<a href="ayurvedic.php"><b>Sexual Wellness</b></a>
+							</div>
+						</div>
+						<div class="dropdown">
+						<li><a href="devices"><b>Medical Devices</b></a></li>
+							<div class="dropdown-content">
+								<a><b>Diabetes Monitors</b></a>
+								  <a><b>Blood Pressure Monitors</b></a>          		
+								 <a><b>Hemoglobin Test Monitors</b></a>
+								   <a><b>Disposal Products</b></a>
+								<a><b>Thermometers</b></a>
+								 <a><b>Doctor's Corners</b></a>
+								<a><b>Suction Machine</b></a>
+							</div>
+						</div>
+						<li><a href="#blogs"><b>Blogs</b></a></li>
+					</ul><br>
+					<div class="wrap">
+					  <div class="search">
+						 <input type="text" class="searchTerm" placeholder="Search for Prescriptions, Medicine Info......">
+						 <button type="submit" class="searchButton">
+						   <i class="fa fa-search"></i>
+						</button>
+					  </div>
+				   </div>
+			</header>
+
+
+    <div class="container">
+    	<div class="slider">
+    		<div class="slide slide1">
+    			<div class="caption animated bounce">
+    				<h2><b>NEW CUSTOMERS? AVAIL GREAT BENEFITS</b></h2>
+    				<p>Flat <h3 style="font-size: 60px;color: #F20F0F; padding: 5px;"><b>22% OFF</b></h3>
+    				<p>on your first order</p><br>
+    				<p><b>Use Promo Code:</b><span style="background-color: #625D5E; color: white; padding:3px;">BOH232</span></p><br>
+    				<button class="shop_btn"><b>SHOP NOW</b></button>
+    			</div>
+    		</div>
+    		<div class="slide slide2">
+    			<div class="caption">
+    				<p><b>Get Interesting Facts and Avail Great Deals On</b></p><h1 class="flash" style="font-size: 50px; color: white; padding: 5px;">AYURVEDIC PRODUCTS</h1><br><br>
+    				<p><b>Use Promo Code:<span style="background-color: red; color: white; padding:3px;">AYUR5</span><br>& get Extra 5% CASHBACK</b>
+    				</p><br>
+    				<button class="shop_btn"><b>SHOP NOW</b></button>
+    			</div>
+    			<div class="label">
+    				<!-- <h2>FREE <br>SHIPPING</h2>
+    				<h3>NEXT DAY <br>DELIVERY</h3> -->
+    			</div>
+    		</div>
+    		<div class="slide slide3">
+    			<div class="caption animated rubberband">
+    				<h1 style="font-size: 60px; color: white;"><b>PAY & GET REWARDED</b></h1><br>
+    				<p><b>Pay Using Paytm & get upto</b></p>
+    				<h3 style="font-size: 60px;color: yellow; padding: 5px;"><b><span>&#8377;</span> 200 CASHBACK</b></h3>
+    			</div>
+    		</div>
+    		<div class="slide slide4">
+    			<div class="caption animated pulse">
+    				<h2>The <b>"BEST IN CARE PRODUCTS"</b></h2><br><p>for your Little One</p><br>
+    				<h1 style="color: red;"><b>UPTO 20% OFF</b></h1><br>
+    				<p>On Baby Care Products</p><br><br>
+    				<button class="shop_btn"><b>SHOP NOW</b></button>
+    			</div>
+    	    </div>
+    	    <div class="slide slide1">
+    	    	<div class="caption">
+    	    		<h2><b>NEW CUSTOMERS? AVAIL GREAT BENEFITS</b></h2>
+    	    		<p>Flat <h3 style="font-size: 60px;color: #F20F0F; padding: 5px;"><b>22% OFF</b></h3>
+    	    			<p>on your first order</p><br>
+    				<p><b>Use Promo Code:</b><span style="background-color: #625D5E; color: white; padding:3px;">BOH232</span></p><br>
+    				<button class="shop_btn"><b>SHOP NOW</b></button>
+    	    	</div>
+    	    </div>
+    	</div>
+    </div>
+    <hr style="border: 3px solid #625D5E">
+    <div class="section_heading">
+	    <h2>EXCITING DEALS ON NATURAL CARE</h2>
+	</div>
+	<hr style="border: 3px solid #625D5E">
+    <div class="card_container">
+        <div class="card">
+        	<div class="face face1">
+        		<div class="content">	
+          			<img src="image/himalaya.jpg" alt="Fever" style="width:100%;">
+          			<h1>Flat 25% OFF</h1>
+          		</div>
+          	</div>
+          	<div class="face face2">
+        		<div class="content">
+          			<p>Exciting Offers on Wide Range of <b>Himalaya</b> Products</p><br>
+          			<p><button class="shop_btn_1"><b>SHOP NOW</b></button></p>
+        		</div>
+      		</div>
+      	</div>
+        <div class="card">
+        	<div class="face face1">
+        		<div class="content">
+			        <img src="image/ayush.jpg" alt="Headache" style="width:100%">
+			        <h1>Flat 45% OFF</h1>
+			    </div>
+			</div>
+			<div class="face face2">
+        		<div class="content">
+			        <p><b>AYUSH</b>- Amongst one of the best Natural Products</p><br>
+			        <p><button class="shop_btn_1"><b>SHOP NOW</b></button></p>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+        	<div class="face face1">
+        		<div class="content">
+					<img src="image/patanjali.jpg" alt="Denim Jeans" style="width:100%">
+					<h1>Flat 22% OFF</h1>
+				</div>
+			</div>
+			<div class="face face2">
+        		<div class="content">
+					<p><b>PATANJALI- Make in INDIA</b></p><br>
+					<p><button class="shop_btn_1"><b>SHOP NOW</b></button></p>
+        		</div>
+     		</div>
+     	</div>
+        <div class="card">
+        	<div class="face face1">
+        		<div class="content">
+			        <img src="image/biotique.jpg" alt="Denim Jeans" style="width:100%">
+			        <h1>Flat 10% OFF</h1>
+			    </div>
+			</div>
+         	<div class="face face2">
+        		<div class="content">
+			        <p>Get Healthier skin with wide range of <b>BIOTIQUE</b> products</p><br>
+			        <p><button class="shop_btn_1"><b>SHOP NOW</b></button></p>
+        		</div>
+      		</div>
+    	</div>
+    </div>
+    <hr style="border: 3px solid #625D5E">
+    <div class="section_heading">
+	    <h2>SHOP BY HEALTH CONCERN</h2>
+	</div>
+	<hr style="border: 3px solid #625D5E">
+    <div class="card_container">
+    	<div class="flip">
+    		<div class="front">
+    			<div class="content">
+    				<img src="image/diabetes.jpg" alt= "Diabetes" style="width: 100%;height: 100%;">
+    				<h1>DIABETIC CARE</h1>
+    			</div>
+    		</div>
+    		<div class="back">
+    			<div class="Details">
+    				<p>Want to know about your medicines? <b>SEARCH AND GET DETAILS</b></p><br>
+    				<button class="shop_btn_2"><b>EXPLORE NOW</b></button>
+    				<div class="social-icons">
+    					<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+    					<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+    					<a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+    					<a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+    					<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+    				</div>	
+    			</div>
+    		</div>
+    </div>
+    	<div class="flip">
+    		<div class="front">
+    			<div class="content">
+    				<img src="image/cardiac.jpg" alt= "Diabetes" style="width: 100%;height: 100%;">
+    				<h1>CARDIAC CARE</h1>
+    			</div>
+    		</div>
+    		<div class="back">
+    			<div class="Details">
+    				<p>Want to know about your medicines? <b>SEARCH AND GET DETAILS</b></p><br>
+    				<button class="shop_btn_2"><b>EXPLORE NOW</b></button>
+    				<div class="social-icons">
+    					<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+    					<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+    					<a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+    					<a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+    					<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+    			</div>
+    			
+    		</div>
+    	</div>
+    </div>
+    	<div class="flip">
+    		<div class="front">
+    			<div class="content">
+    				<img src="image/deaddiction.jpg" alt= "Diabetes" style="width: 100%;height: 100%;">
+    				<h1>DE-ADDICTION</h1>
+    			</div>
+    		</div>
+    		<div class="back">
+    			<div class="Details">
+    				<p>Want to know about your medicines? <b>SEARCH AND GET DETAILS</b></p><br>
+    				<button class="shop_btn_2"><b>EXPLORE NOW</b></button>
+    				<div class="social-icons">
+    					<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+    					<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+    					<a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+    					<a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+    					<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+    			</div>
+    			
+    		</div>
+    	</div>
+    </div>
+    	<div class="flip">
+    		<div class="front">
+    			<div class="content">
+    				<img src="image/women.jpg" alt= "Diabetes" style="width: 100%; height: 100%;">
+    				<h1>WOMEN CARE</h1>
+    			</div>
+    		</div>
+    		<div class="back">
+    			<div class="Details">
+    				<p>Want to know about your medicines? <b>SEARCH AND GET DETAILS</b></p><br>
+    				<button class="shop_btn_2"><b>EXPLORE NOW</b></button>
+    				<div class="social-icons">
+    					<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+    					<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+    					<a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+    					<a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+    					<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+    			</div>
+    			
+    		</div>
+    	</div>
+    </div>
+</div>
+<hr style="border: 3px solid #625D5E">
+    <div class="section_heading">
+	    <h2>TOP LIGHTNING DEALS</h2>
+	</div>
+	<hr style="border: 3px solid #625D5E">
+    <div class="card_container">
+        <div class="card">
+			<div class="face face1">
+			<div class="content">
+			  <img src="image/pampers.jpg" alt="pampers" style="width:100%;">
+			  <h1><span style="text-decoration: line-through;margin-right: 20px;">&#8377; 120.00  </span>&#8377; 80.00</h1>
+			  </div>
+			  </div>
+			  <div class="face face2">
+			<div class="content">
+			  <p><b>Pampers Baby Dry</b><br>18 Diapers</p><br>
+			  <p><button class="shop_btn_1" name="cart"><b>ADD TO CART</b></button><button id="myBtn" class="shop_btn_1"><b>DETAILS</b></button></p>
+						<div id="myModal" class="modal">
+						  <div class="modal-content">
+							<div class="modal-header">
+							  <span class="close">&times;</span>
+							  <h2>Description</h2>
+							</div>
+							<div class="modal-body">
+							  <p style="font-size: 15px; text-align: left;"></p><ul>
+								<li>Hypo allergenic lotion with Aloe vera extract</li>
+								 <li>Balloon stretch tape</li>
+								 <li>Soft cotton like outer cover</li>
+								 <li>Magic core</li>
+							 </ul>
+							</div>
+						  </div>
+						</div>
+			</div>
+		  </div>
+			</div>
+			<div class="card">
+			<div class="face face1">
+			<div class="content">
+		   <img src="image/accucheck.jpg" alt="accucheck" style="width:100%;">
+		   <h1><span style="text-decoration: line-through;margin-right: 20px;">&#8377; 640.00  </span>&#8377; 550.00</h1>
+	   </div>
+	</div>
+	<div class="face face2">
+			<div class="content">
+		   <p><b>Accu-check Active test strips<br></b>60 Strips</p><br>
+		   <p><button class="shop_btn_1"><b>ADD TO CART</b></button><button id="myBtn1" class="shop_btn_1"><b>DETAILS</b></button></p>
+						<div id="myModal1" class="modal">
+						  <div class="modal-content">
+							<div class="modal-header">
+							  <span class="close">&times;</span>
+							  <h2>Description</h2>
+							</div>
+							<div class="modal-body">
+							  <p style="font-size: 15px; text-align: left;"></p><ul>
+								<li>Combo of Accu-Chek active meter and Accu-Chek active 100 strips</li>
+								<li>The Accu-Chek active blood glucose meter packs many powerful features into a smaller size</li>
+								<li>Auto-coding (only when opening a new test strip container)</li>
+							 </ul>
+							</div>
+						  </div>
+						</div>
+					</div>
+				</div>
+			</div>
+	
+        <div class="card">
+        	<div class="face face1">
+        		<div class="content">
+					<img src="image/proteinx.jpg" alt="proteinx" style="width:100%">
+					<h1><span style="text-decoration: line-through;margin-right: 20px;">&#8377; 700.00  </span>&#8377; 620.00</h1>
+				</div>
+			</div>
+			<div class="face face2">
+        		<div class="content">
+					<p><b>PROTEINX-Tasty Chocolate Flavour </b>400g</p><br>
+					<p><button class="shop_btn_1"><b>ADD TO CART</b></button><button class="shop_btn_1"><b>DETAILS</b></button></p>
+        		</div>
+     		</div>
+     	</div>
+        <div class="card">
+        	<div class="face face1">
+        		<div class="content">
+			        <img src="image/hicks.jpg" alt="hicks" style="width:100%">
+			        <h1><span style="text-decoration: line-through;margin-right: 20px;">&#8377; 151.00  </span>&#8377; 97.00</h1>
+			    </div>
+			</div>
+         	<div class="face face2">
+        		<div class="content">
+			        <p><b>HICKS - Easy Check Thermometer</b></p><br>
+			        <p><button class="shop_btn_1"><b>ADD TO CART</b></button><button class="shop_btn_1"><b>DETAILS</b></button></p>
+        		</div>
+      		</div>
+    	</div>
+    	<div class="card">
+        	<div class="face face1">
+        		<div class="content">	
+          			<img src="image/denquit.jpg" alt="denquit" style="width:100%;">
+          			<h1><span style="text-decoration: line-through;margin-right: 20px;">&#8377; 649.00  </span>&#8377; 500.00</h1>
+          		</div>
+          	</div>
+          	<div class="face face2">
+        		<div class="content">
+          			<p><b>Denquit Syrup- Ayurvedic Medicine for Dangue</b></p><br>
+          			<p><button class="shop_btn_1"><b>ADD TO CART</b></button><button class="shop_btn_1"><b>DETAILS</b></button></p>
+        		</div>
+      		</div>
+      	</div>
+        <div class="card">
+        	<div class="face face1">
+        		<div class="content">
+			        <img src="image/maxx.jpg" alt="maxx" style="width:100%">
+			        <h1><span style="text-decoration: line-through;margin-right: 20px;">&#8377; 2456.00  </span>&#8377; 1850.00</h1>
+			    </div>
+			</div>
+			<div class="face face2">
+        		<div class="content">
+			        <p><b>Health Sutra Maxx Capsules</b><br>30 Capsules</p><br>
+			        <p><button class="shop_btn_1"><b>ADD TO CART</b></button><button class="shop_btn_1"><b>DETAILS</b></button></p>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+        	<div class="face face1">
+        		<div class="content">
+					<img src="image/nivea.jpg" alt="nivea" style="width:100%;">
+					<h1><span style="text-decoration: line-through;margin-right: 20px;">&#8377; 356.00  </span>&#8377; 200.00</h1>
+				</div>
+			</div>
+			<div class="face face2">
+        		<div class="content">
+					<p><b>Nivea-Lotion</b> 300ml<p><br>
+					<p><button class="shop_btn_1"><b>ADD TO CART</b></button><button class="shop_btn_1"><b>DETAILS</b></button></p>
+        		</div>
+     		</div>
+     	</div>
+        <div class="card">
+        	<div class="face face1">
+        		<div class="content">
+			        <img src="image/apple.jpg" alt="Vinegar" style="width:300px;">
+			       	<h1><span style="text-decoration: line-through;margin-right: 20px;">&#8377; 790.00  </span>&#8377; 610.00</h1>
+			    </div>
+			</div>
+         	<div class="face face2">
+        		<div class="content">
+			        <p><b>APPLE-Cidegar Vinegar</b> 200ml</p><br>
+			        <p><button class="shop_btn_1"><b>ADD TO CART</b></button><button class="shop_btn_1"><b>DETAILS</b></button></p>
+        		</div>
+      		</div>
+    	</div>
+    </div>
+    <hr style="border: 3px solid #625D5E">
+    <footer class="footer-distributed">
+ 
+		<div class="footer-left">
+			<div style="box-sizing: border-box;background-color: white;width: 300px; height: 80px; padding: 10px;"><a href="index.html" style="text-decoration: none;">
+		        <img src="image/logodesign.jpg" style="max-width: 35px; max-height: 40px;top:10%; left:10%;">
+		        <h1 class="shimmer">MEDIFACTS</h1>
+		        <h3 style="font-family: Comic Sans MS; font-weight: 250; font-size: 1em;text-align-last: left;  padding: 0 0px 0 80px;color:#1CB4E3;">We Know Your Pills</h3>
+		    </a></div>
+				<p class="footer-links">
+					<a href="#">Home</a>
+					|
+					<a href="#">Blog</a>
+					|
+					<a href="#">About</a>
+					|
+					<a href="#">Contact</a>
+				</p>
+ 
+				<p class="footer-company-name">© 2019 Medifacts Pvt. Ltd.</p>
+			</div>
+ 
+			<div class="footer-center">
+				<div>
+					<i class="fa fa-map-marker"></i>
+					  <p><span>A-Block, Thakur Educational Campus, Shyamnarayan Thakur Marg, Thakur Village, Kandivali East, Mumbai, Maharashtra 400101</p>
+				</div>
+ 
+				<div>
+					<i class="fa fa-phone"></i>
+					<p>022 6730 8106</p>
+				</div>
+				<div>
+					<i class="fa fa-envelope"></i>
+					<p><a href="nehajhagigly@gmail.com">support@medifacts.com</a></p>
+				</div>
+			</div>
+			<div class="footer-right">
+				<p class="footer-company-about">
+					<span>About the company</span>
+					We offer facts about medicines and offer medicines in demand to doorstep.</p>
+				<div class="social-icons">
+					<a href="#"><i class="fa fa-facebook"></i></a>
+					<a href="#"><i class="fa fa-twitter"></i></a>
+					<a href="#"><i class="fa fa-instagram"></i></a>
+					<a href="#"><i class="fa fa-linkedin"></i></a>
+					<a href="#"><i class="fa fa-google-plus"></i></a>
+				</div>
+			</div>
+		</footer>
+
+		<script>
+			// Get the modal
+			var modal = document.getElementById("myModal");
+			
+			// Get the button that opens the modal
+			var btn = document.getElementById("myBtn");
+			
+			// Get the <span> element that closes the modal
+			var span = document.getElementsByClassName("close")[0];
+			
+			// When the user clicks the button, open the modal
+			btn.onclick = function() {
+			  modal.style.display = "block";
+			}
+			
+			// When the user clicks on <span> (x), close the modal
+			span.onclick = function() {
+			  modal.style.display = "none";
+			}
+			
+			// When the user clicks anywhere outside of the modal, close it
+			window.onclick = function(event) {
+			  if (event.target == modal) {
+				modal.style.display = "none";
+			  }
+			}
+			var modal1 = document.getElementById("myModal1");
+			
+			// Get the button that opens the modal
+			var btn1 = document.getElementById("myBtn1");
+			
+			// Get the <span> element that closes the modal
+			var span = document.getElementsByClassName("close")[0];
+			
+			// When the user clicks the button, open the modal
+			btn1.onclick = function() {
+			  modal1.style.display = "block";
+			}
+			
+			// When the user clicks on <span> (x), close the modal
+			span.onclick = function() {
+			  modal1.style.display = "none";
+			}
+			
+			// When the user clicks anywhere outside of the modal, close it
+			window.onclick = function(event) {
+			  if (event.target == modal1) {
+				modal1.style.display = "none";
+			  }
+			}
+			</script>
+</body>
+</html>
